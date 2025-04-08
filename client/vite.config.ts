@@ -15,7 +15,14 @@ export default defineConfig({
   },
   build: {
     outDir: '../dist',
-    emptyOutDir: true
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'src/index.html'),
+        login: path.resolve(__dirname, 'src/pages/auth/login.html'),
+        register: path.resolve(__dirname, 'src/pages/auth/register.html')
+      }
+    }
   },
   resolve: {
     alias: {
