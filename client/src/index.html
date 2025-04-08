@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja de Crochê da Ruiva</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="./styles/main.scss" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">
+        <h1>Loja de Crochê da Ruiva</h1>
+      </div>
+      <div class="nav-links">
+        <a href="#hero">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+        <button class="login-btn">Login</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero com Carousel -->
+    <section id="hero" class="hero">
+      <div class="carousel">
+        <div class="carousel-slide active">
+          <img src="https://via.placeholder.com/800x400?text=Blusas+em+Destaque" alt="Blusas em destaque">
+        </div>
+        <div class="carousel-slide">
+          <img src="https://via.placeholder.com/800x400?text=Biquínis+em+Destaque" alt="Biquínis em destaque">
+        </div>
+        <div class="carousel-slide">
+          <img src="https://via.placeholder.com/800x400?text=Saias+em+Destaque" alt="Saias em destaque">
+        </div>
+      </div>
+    </section>
+
+    <!-- Quem Sou Eu -->
+    <section id="sobre" class="sobre">
+      <h2>Quem Sou Eu</h2>
+      <div class="sobre-content">
+        <img src="https://via.placeholder.com/400x400?text=Artesã" alt="Artesã" class="sobre-image">
+        <p>
+          Olá! Sou artesã apaixonada por crochê e confeccionei cada peça com muito carinho.
+          Todas as peças são feitas sob medida, conforme o gosto de cada cliente. Seja bem-vinda!
+        </p>
+      </div>
+    </section>
+
+    <!-- Galeria de Produtos -->
+    <section id="produtos" class="produtos">
+      <h2>Galeria de Produtos</h2>
+      <div class="categorias-filtro">
+        <button class="categoria-btn active" data-categoria="todos">Todos</button>
+        <button class="categoria-btn" data-categoria="blusas">Blusas</button>
+        <button class="categoria-btn" data-categoria="shorts">Shorts</button>
+        <button class="categoria-btn" data-categoria="saias">Saias</button>
+        <button class="categoria-btn" data-categoria="biquinis">Biquínis</button>
+      </div>
+
+      <div class="produtos-grid">
+        <!-- Os produtos serão carregados dinamicamente via JavaScript -->
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+      <h2>Contato</h2>
+      <div class="contato-info">
+        <p><i class="fab fa-instagram"></i> @lojadecroche</p>
+        <p><i class="fab fa-whatsapp"></i> (00) 91234-5678</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Loja de Crochê da Ruiva</p>
+  </footer>
+
+  <script type="module" src="./main.ts"></script>
+</body>
+</html> 
