@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - Loja de Crochê da Ruiva</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="../../styles/auth.scss">
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-card">
+      <h1>Registro</h1>
+      <form id="registerForm" class="auth-form">
+        <div class="form-group">
+          <label for="name">Nome Completo</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirmar Senha</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+        <button type="submit" class="auth-button">Registrar</button>
+        <p class="auth-link">
+          Já tem uma conta? <a href="../auth/login.html">Faça login</a>
+        </p>
+      </form>
+    </div>
+  </div>
+  <script type="module" src="./register.ts"></script>
+</body>
+</html> 
